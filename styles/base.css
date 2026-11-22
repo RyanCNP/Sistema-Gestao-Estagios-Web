@@ -1,0 +1,58 @@
+:root {
+  --bg-page: #f2f4f7;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f8fafc;
+  --header-bg: #4f5d6b;
+  --header-text: #ffffff;
+  --text-primary: #1e293b;
+  --text-muted: #475569;
+  --border-color: #cbd5e1;
+  --accent-primary: #1d4ed8;
+  --accent-primary-hover: #1e40af;
+  --badge-bg: #e2e8f0;
+  --success-bg: #dcfce7;
+  --success-text: #166534;
+  --error-bg: #fee2e2;
+  --error-text: #991b1b;
+  --warning-bg: #fef3c7;
+  --warning-text: #92400e;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#app:focus {
+  outline: none;
+}
+
+:is(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}

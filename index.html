@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Gestão de Estágios Supervisionados — Fatec Votorantim</title>
+
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+</head>
+
+<body>
+  <header id="app-header" class="app-header" hidden>
+    <div class="container header-content">
+      <div class="brand">
+        <strong>Gestão de Estágios</strong>
+        <span class="badge-demo">Demo</span>
+      </div>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <button type="button" class="nav-btn" data-route="painel">
+          Início
+        </button>
+        <button type="button" class="nav-btn" data-route="solicitacao" data-roles="ALUNO">
+          Nova Solicitação
+        </button>
+        <button type="button" class="nav-btn" data-route="admin" data-roles="SECRETARIA,ADMIN">
+          Cadastros
+        </button>
+      </nav>
+
+      <div class="user-session">
+        <span id="session-notif" class="nav-icon" aria-label="Avisos do fluxo" title="Avisos do fluxo">
+          🔔
+        </span>
+        <span id="session-user-greeting">Olá, Usuário</span>
+        <span id="session-user-avatar" class="user-avatar" aria-hidden="true">U</span>
+        <button type="button" id="btn-logout" class="btn btn-outline">
+          Sair
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="global-alert" class="alert" role="status" aria-live="polite" hidden></div>
+  </div>
+
+  <main id="app" class="container app-main" tabindex="-1">
+    <noscript>
+      <p>É necessário habilitar o JavaScript para executar esta aplicação.</p>
+    </noscript>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <small>
+        Protótipo acadêmico demonstrativo — Não substitui SEI, assinatura eletrônica oficial ou deliberações
+        institucionais.
+      </small>
+    </div>
+  </footer>
+
+  <script type="module" src="./scripts/router.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "sistema-gestao-estagios-web",
+  "version": "1.0.0",
+  "description": "Portótipo de Interface Web Responsíva para Sistema de Gestão de Estágios Supervisionados, FATEC Votorantim - Benedicto Pagliato. Professora responsável: Brenda Ferreira Farrer",
+  "homepage": "https://github.com/RyanCNP/Sistema-Gestao-Estagios-Web#readme",
+  "bugs": {
+    "url": "https://github.com/RyanCNP/Sistema-Gestao-Estagios-Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanCNP/Sistema-Gestao-Estagios-Web.git"
+  },
+  "license": "MIT",
+  "author": "Ryan Carlo Negretti Pereira",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve . -p 4200",
+    "dev": "serve . -p 4200 --no-clipboard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
